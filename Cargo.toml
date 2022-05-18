@@ -1,0 +1,17 @@
+[package]
+edition = "2021"
+name = "wasmless-vrf"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.57"
+ecdsa = {version = "0.14.1", features = ["sign"]}
+elliptic-curve = "0.12.0"
+hex = "0.4.3"
+k256 = {version = "0.11.0", features = ["default", "pem", "jwk"]}
+log = "0.4.16"
+rfc6979 = "0.2.0"
+sha2 = "0.10.1"
+sha3 = "0.10.1"
